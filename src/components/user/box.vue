@@ -1,16 +1,12 @@
 <template>
-  <div>
-    <div class="userinfo" >
-    <div class="userimg">  <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" /></div>
-    <div class="userinfo-nickname">
-    </div>
-    </div>
+  <div class="page">
+
   </div>
 </template>
 
 <script>
   export default {
-    name: "User",
+    name: "Box",
     props: {
       title: String,
       visible: {
@@ -23,6 +19,8 @@
         motto: 123123,
         userInfo: {}
       };
+    },
+    component:{
     },
     methods: {
       change: function() {
@@ -43,7 +41,7 @@
     },
     mounted: function() {
 
-        this.getUserInfo();
+      this.getUserInfo();
     }
 
   };
